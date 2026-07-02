@@ -34,7 +34,8 @@ MY_USERNAME = os.environ.get("MY_USERNAME", "").strip() or _DEFAULT_MY_USERNAME
 
 _opponents_env = os.environ.get("OPPONENT_USERNAMES", "").strip()
 if _opponents_env:
-    OPPONENT_USERNAMES = [u.strip() for u in _opponents_env.split(",") if u.strip()]
+    _env_opponents = [u.strip() for u in _opponents_env.split(",") if u.strip()]
+    OPPONENT_USERNAMES = list(dict.fromkeys(_DEFAULT_OPPONENT_USERNAMES + _env_opponents))
 else:
     OPPONENT_USERNAMES = _DEFAULT_OPPONENT_USERNAMES
 

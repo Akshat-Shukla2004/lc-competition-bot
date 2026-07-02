@@ -143,7 +143,7 @@ All configuration is in `config.py` via environment variables.
 | `BOT_TOKEN` | Telegram bot token | required |
 | `CHAT_ID` | Telegram chat ID | required |
 | `MY_USERNAME` | Your LeetCode username | `your_username` |
-| `OPPONENT_USERNAMES` | Comma-separated opponent usernames | `opponent_username` |
+| `OPPONENT_USERNAMES` | Optional extra opponent usernames to add on top of the built-in list | optional |
 | `INACTIVITY_ESCALATION_MINUTES` | Minutes before nuclear messages | `30` (in config.py) |
 
 ---
@@ -152,5 +152,5 @@ All configuration is in `config.py` via environment variables.
 
 - The `data.json` is automatically managed — don't edit it manually unless resetting state
 - To **reset** an opponent's baseline (so next run picks up their latest solve fresh), delete their entry from `data.json`
-- To add a new opponent, just add their username to `OPPONENT_USERNAMES` — state is auto-created
+- To add a new opponent, update the built-in list in `config.py` or append extra usernames via `OPPONENT_USERNAMES` — state is auto-created
 - Runs are completely free within GitHub's generous free tier (2,000 minutes/month for public repos; unlimited for public)
