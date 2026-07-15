@@ -1,6 +1,6 @@
 # 🏆 LeetCode Competition Tracker
 
-A fully automated, free-to-run bot that monitors your LeetCode opponent's activity and sends psychologically engaging Telegram alerts — every 5 minutes via GitHub Actions.
+A fully automated, free-to-run bot that monitors your LeetCode opponent's activity and sends psychologically engaging Telegram alerts — every 3 hours via GitHub Actions.
 
 ---
 
@@ -19,7 +19,7 @@ leetcode_tracker/
 ├── requirements.txt
 └── .github/
     └── workflows/
-        └── run.yml   ← GitHub Actions (every 5 min)
+        └── run.yml   ← GitHub Actions (every 3 hours)
 ```
 
 ---
@@ -94,7 +94,7 @@ Add these secrets:
 
 Go to **Actions** tab → click **Enable GitHub Actions**
 
-The workflow runs every 5 minutes automatically. You can also trigger it manually via the **workflow_dispatch** button.
+The workflow runs every 3 hours automatically. You can also trigger it manually via the **workflow_dispatch** button.
 
 > ⚠️ GitHub may delay scheduled runs by a few minutes during high-traffic periods. This is normal.
 
