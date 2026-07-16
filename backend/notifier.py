@@ -10,7 +10,7 @@ from typing import Any
 
 import requests
 
-import config
+from backend import config
 
 logger = logging.getLogger(__name__)
 

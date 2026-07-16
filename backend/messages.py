@@ -9,7 +9,7 @@ import random
 import time
 from datetime import date
 
-import config
+from backend import config
 
 
 # ─── Message templates ────────────────────────────────────────────────────────
@@ -134,7 +134,7 @@ def generate_leaderboard_message(
     Returns:
         Telegram-ready markdown string.
     """
-    from storage import get_daily_solves, get_streak
+    from backend.storage import get_daily_solves, get_streak
 
     today = date.today().isoformat()
     lines = [f"📊 *Daily Leaderboard — {today}*\n"]

@@ -14,7 +14,7 @@ import os
 from datetime import date
 from typing import Any
 
-import config
+from backend import config
 
 logger = logging.getLogger(__name__)
 

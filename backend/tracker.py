@@ -13,11 +13,11 @@ import logging
 import time
 from datetime import date
 
-import config
-import leetcode
-import messages
-import notifier
-import storage
+from backend import config
+from backend import leetcode
+from backend import messages
+from backend import notifier
+from backend import storage
 
 logger = logging.getLogger(__name__)
 

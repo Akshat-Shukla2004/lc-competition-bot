@@ -18,11 +18,11 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-import config
-import notifier
-import messages
-import storage
-import tracker
+from backend import config
+from backend import messages
+from backend import notifier
+from backend import storage
+from backend import tracker
 
 
 def run_leaderboard() -> None:
